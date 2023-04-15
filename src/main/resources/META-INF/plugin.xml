@@ -1,0 +1,61 @@
+<idea-plugin>
+    <id>cn.hyuga.lombok-enums-component</id>
+    <name>Lombok Enum Component</name>
+    <vendor email="hyuga0410@gmail.com" url="">HYUGA</vendor>
+
+    <description>
+        <![CDATA[
+        <h1>Lombok枚举扩展插件</h1>
+
+        <ul>
+            <li>增强Lombok枚举扩展支持</li>
+            <li>支持自动生成枚举类中自定义的常量属性get方法</li>
+            <li>支持常规类上使用@EnumDesc</li>
+            <li>支持常规类中的枚举成员变量上使用@EnumDesc</li>
+            <li>不支持枚举类/接口/抽象类/非枚举成员属性等场景使用@EnumDesc</li>
+            <li>JDK Version 17</li>
+        </ul>
+
+        <p>
+            <span style="font-weight: bold">
+                该插件用于将自定义枚举常量的<code>get</code>方法添加到<code>IntelliJ IDEA</code>的<code>PSI</code>中，以解决自动生成的<code>get</code>方法无法通过<code>IDEA</code>编译的问题。
+            </span>
+        </p>
+
+        <p>
+            <span>
+                插件原作者为<a href="https://github.com/pengqinglong17199/lombok-pql-plugins">pengqinglong</a>
+            </span>
+        </p>
+        <p>
+            <span>本插件在其基础上扩展了class类型注解也支持自定义属性生成get方法，由IDEA2023.1版本开发。</span>
+        </p>
+        ]]>
+    </description>
+
+    <!-- 更改记录 -->
+    <change-notes><![CDATA[
+        <h3>V1.0</h3>
+        <ul>
+            <li>Initial version</li>
+            <li>Support @EnumDesc</li>
+            <li>Intellij IDEA 2023.1</li>
+        </ul>
+        <!--
+        <h3>V1.2</h3>
+        <ul>
+            <li>Add compatibility Range 221*</li>
+        </ul>
+        -->
+        ]]>
+    </change-notes>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.lang</depends>
+    <depends>com.intellij.modules.java</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <lang.psiAugmentProvider implementation="cn.hyuga.lombok.enums.component.EnumDescAugmentProvider"/>
+    </extensions>
+
+</idea-plugin>
