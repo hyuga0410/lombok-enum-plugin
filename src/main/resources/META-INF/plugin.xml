@@ -18,9 +18,40 @@
 
         <p>
             <span style="font-weight: bold">
-                该插件用于将自定义枚举常量的<code>get</code>方法添加到<code>IntelliJ IDEA</code>的<code>PSI</code>中，以解决自动生成的<code>get</code>方法无法通过<code>IDEA</code>编译的问题。
+                该插件用于将自定义枚举常量的<strong>get</strong>方法添加到<strong>IntelliJ IDEA</strong>的<strong>PSI</strong>中，以解决自动生成的<strong>get</strong>方法无法通过<strong>IDEA</strong>编译的问题。
             </span>
         </p>
+
+        <h2>使用步骤</h2>
+
+        <h4>1. 引入依赖</h4>
+
+        <pre>
+        groupId: cn.hyuga
+        artifactId: lombok-enums-component
+        version: 1.0.0-SNAPSHOT
+        </pre>
+
+        <h4>2. 引入注解</h4>
+        <pre>
+        @EnumDesc(attributes = {"desc", "name})
+        public class Hyuga {
+            private HyugaEnum hyugaEnum;
+        }
+        </pre>
+        或如下：
+        <pre>
+        public class Hyuga {
+            @EnumDesc(attributes = {"desc", "name})
+            private HyugaEnum hyugaEnum;
+        }
+        </pre>
+        <h3>注意</h3>
+        <ul>
+            <li>字段注解优先级高于类注解</li>
+            <li>如上引用后，可以在IDEA中编写编译期不存在的getHyugaEnumDesc方法时不报编译错误</li>
+            <li>attributes所写属性，必须是枚举中存在的常量，且提供了get方法，且必须是String类型常量</li>
+        </ul>
 
         <p>
             <span>
