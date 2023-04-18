@@ -1,5 +1,5 @@
 <idea-plugin>
-    <id>io.github.hyuga0410.lombok-enum-plugin</id>
+    <id>io.github.hyuga0410.lombok-enums-component</id>
     <name>Lombok Enum Component</name>
     <vendor email="hyuga0410@gmail.com" url="">HYUGA</vendor>
 
