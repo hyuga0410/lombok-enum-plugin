@@ -75,12 +75,11 @@
             <li>Support @EnumDesc</li>
             <li>Intellij IDEA 2023.1</li>
         </ul>
-        <!--
-        <h3>V1.2</h3>
+        <h3>V1.1</h3>
         <ul>
-            <li>Add compatibility Range 221*</li>
+            <li>Fix packageName</li>
+            <!-- Add compatibility Range 221* -->
         </ul>
-        -->
         ]]>
     </change-notes>
 
