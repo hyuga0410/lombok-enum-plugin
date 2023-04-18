@@ -1,4 +1,4 @@
-package cn.hyuga.lombok.enums.component;
+package io.github.hyuga0410.lombok.enums.component;
 
 import com.intellij.lang.java.JavaLanguage;
 import com.intellij.lang.jvm.annotation.JvmAnnotationArrayValue;
@@ -26,7 +26,7 @@ import java.util.stream.Collectors;
 public class EnumDescAugmentProvider extends PsiAugmentProvider {
 
     private static final Logger log = Logger.getInstance(EnumDescAugmentProvider.class.getName());
-    private static final String ENUM_DESC = "cn.hyuga.lombok.enums.annotations.EnumDesc";
+    private static final String ENUM_DESC = "io.github.hyuga0410.lombok.enums.annotations.EnumDesc";
     private static final String ENUM = "Enum";
     private static final String STRING_S = "String %s";
     private static final String DESC = "Desc";

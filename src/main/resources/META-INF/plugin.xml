@@ -1,5 +1,5 @@
 <idea-plugin>
-    <id>io.github.hyuga0410.lombok-enums-component</id>
+    <id>io.github.hyuga0410.lombok-enum-plugin</id>
     <name>Lombok Enum Component</name>
     <vendor email="hyuga0410@gmail.com" url="">HYUGA</vendor>
 
@@ -26,7 +26,7 @@
 
     <pre>
     groupId: cn.hyuga
-    artifactId: lombok-enums-component
+    artifactId: lombok-enum-component
     version: 1.0.0-SNAPSHOT
     </pre>
 
@@ -89,7 +89,7 @@
     <depends>com.intellij.modules.java</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <lang.psiAugmentProvider implementation="cn.hyuga.lombok.enums.component.EnumDescAugmentProvider"/>
+        <lang.psiAugmentProvider implementation="io.github.hyuga0410.lombok.enums.component.EnumDescAugmentProvider"/>
     </extensions>
 
 </idea-plugin>

@@ -1,4 +1,4 @@
-# lombok-enums-plugins
+# lombok-enum-plugin
 
 ## Lombok枚举扩展插件
 
