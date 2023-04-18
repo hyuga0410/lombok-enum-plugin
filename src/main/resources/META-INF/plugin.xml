@@ -21,7 +21,7 @@
                 该插件用于将自定义枚举常量的<strong>get</strong>方法添加到<strong>IntelliJ IDEA</strong>的<strong>PSI</strong>中，以解决自动生成的<strong>get</strong>方法无法通过<strong>IDEA</strong>编译的问题。
             </span>
         </p>
-
+        <!--
         <h2>使用步骤</h2>
 
         <h4>1. 引入依赖</h4>
@@ -61,6 +61,7 @@
         <p>
             <span>本插件在其基础上扩展了class类型注解也支持自定义属性生成get方法，由IDEA2023.1版本开发。</span>
         </p>
+        -->
         ]]>
     </description>
 
