@@ -78,7 +78,11 @@
         <h3>V1.1</h3>
         <ul>
             <li>Fix packageName</li>
-            <!-- Add compatibility Range 221* -->
+        </ul>
+        <h3>V1.2</h3>
+        <ul>
+            <li>Add compatibility JDK 11</li>
+            <li>Add compatibility Range 221*</li>
         </ul>
         ]]>
     </change-notes>

@@ -104,7 +104,7 @@ public class EnumDescAugmentProvider extends PsiAugmentProvider {
             return;
         }
         // 提取枚举字段的fields
-        List<PsiField> psiEnumFields = psiFields.stream().filter(this::isEnum).toList();
+        List<PsiField> psiEnumFields = psiFields.stream().filter(this::isEnum).collect(Collectors.toList());
 
         List<JvmAnnotationAttribute> attributes = Objects.requireNonNull(annotation).getAttributes();
 
@@ -171,7 +171,7 @@ public class EnumDescAugmentProvider extends PsiAugmentProvider {
         }
 
         // 提取枚举字段的fields
-        List<PsiField> psiEnumFields = psiFields.stream().filter(this::isEnum).toList();
+        List<PsiField> psiEnumFields = psiFields.stream().filter(this::isEnum).collect(Collectors.toList());
 
         psiEnumFields.forEach(psiField -> {
             // 获取字段上的@EnumDesc
