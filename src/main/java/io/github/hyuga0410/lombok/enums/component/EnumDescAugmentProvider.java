@@ -19,6 +19,8 @@ import java.util.stream.Collectors;
 
 /**
  * EnumDescFactory
+ * <p>
+ * 此扩展用于Enum插件增强现实，改变Java PSI元素的行为。动态添加getFieldXxx method
  *
  * @author pengqinglong
  * @since 2022/5/12

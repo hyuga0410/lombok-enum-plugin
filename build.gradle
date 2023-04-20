@@ -29,14 +29,17 @@ intellij {
     // setPluginName(pluginName)
     setPlugins(["java"])
 }
+
 patchPluginXml {
     sinceBuild = "193.5662"
     // sinceBuild = "231.8109"
     // untilBuild =
     // version = "1.3-SNAPSHOT"
 }
+
 test {
     useJUnitPlatform()
 }
-sourceCompatibility = JavaVersion.VERSION_16
-targetCompatibility = JavaVersion.VERSION_16
+
+sourceCompatibility = JavaVersion.VERSION_11
+targetCompatibility = JavaVersion.VERSION_11
